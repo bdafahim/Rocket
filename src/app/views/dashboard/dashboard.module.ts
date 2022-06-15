@@ -20,7 +20,6 @@ import { ChartjsModule } from '@coreui/angular-chartjs';
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardComponent } from './dashboard.component';
 
-import { WidgetsModule } from '../widgets/widgets.module';
 import {ModelDetailsDialogModule} from "./dialogs/model-details-dialog/model-details-dialog.module";
 
 @NgModule({
@@ -41,7 +40,6 @@ import {ModelDetailsDialogModule} from "./dialogs/model-details-dialog/model-det
     ChartjsModule,
     AvatarModule,
     TableModule,
-    WidgetsModule,
     ModelDetailsDialogModule,
   ],
   declarations: [DashboardComponent]

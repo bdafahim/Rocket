@@ -5,7 +5,7 @@ import { DashboardChartsData, IChartProps } from './dashboard-charts-data';
 import {MatDialog, MatDialogRef} from "@angular/material/dialog";
 import {ModelDetailsDialogComponent} from "./dialogs/model-details-dialog/model-details-dialog.component";
 import {MachineLearningModel} from "./types/machine-learning-model";
-import {DashboardService} from "./dashboard-services/dashboard.service";
+import {DashboardService} from "../../service/dashboard/dashboard.service";
 import {BsModalRef, BsModalService} from "ngx-bootstrap/modal";
 
 interface IUser {
