@@ -5,3 +5,118 @@
     }
   }
 }
+
+.shift_card {
+  background: #FFFFFF;
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding-left: 15px;
+  height: 140px;
+  width: 340px;
+  padding-bottom: 20px;
+  cursor: pointer;
+  padding-right: 10px;
+}
+
+.shift-card-header {
+  font-weight: 600;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 240px;
+}
+
+.shift-card-content {
+  font-weight: 400;
+  font-size: 14px;
+  color: #606268;
+  padding-top: 8px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 240px;
+}
+
+.square {
+  width: 16px;
+  height: 16px;
+  background: #0EA5E9;
+}
+
+.material-icons{
+  font-family: 'Material Icons', serif !important;
+  background: #F7F9FC;
+  border: #F7F9FC;
+}
+.shift-card-first-part {
+  padding-top: 15px;
+}
+
+button.mat-menu-item {
+  font-weight: 400 !important;
+  width: 180px;
+  font-size: 14px;
+}
+button.mat-menu-item:hover {
+  background-color: #4373F5;
+  color: #fff !important;
+}
+
+.shift-list {
+  margin-bottom: 20px;
+}
+
+.shift-card-header {
+  font-weight: 600;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 240px;
+}
+
+.shift-card-content {
+  font-weight: 400;
+  font-size: 14px;
+  color: #606268;
+  padding-top: 8px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 240px;
+}
+
+
+:host ::ng-deep  {
+  .modal-content {
+    border-radius: 10px !important;
+  }
+}
+
+  .dialog-content {
+    padding-bottom: 10px;
+  }
+
+
+
+  @media (max-width: 1440px) and (min-width: 768px) {
+    .col4 {
+      flex: 0 0 33.33333333%;
+      max-width: 33.33333333%;
+    }
+  }
+
+  @media (min-width: 1441px) {
+    .col3 {
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+  }
+  @media (min-width: 576px) and (max-width: 767.98px)  {
+    .col2 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+

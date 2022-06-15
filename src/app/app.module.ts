@@ -42,9 +42,12 @@ import {
   SidebarModule,
   TabsModule,
   UtilitiesModule,
+
 } from '@coreui/angular';
 
 import { IconModule, IconSetService } from '@coreui/icons-angular';
+import {HttpClientModule} from "@angular/common/http";
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true,
@@ -85,6 +88,8 @@ const APP_CONTAINERS = [
     BadgeModule,
     ListGroupModule,
     CardModule,
+    HttpClientModule,
+    ModalModule.forRoot()
   ],
   providers: [
     {

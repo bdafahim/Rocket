@@ -1,0 +1,29 @@
+<div mat-dialog-title class="header mb-0">
+  <h5 class="header-title">Model</h5>
+<!--  <button type="button" class="close" (click)="dialogRef.close()">-->
+<!--    <i class="material-icons">close</i>-->
+<!--  </button>-->
+</div>
+
+<div mat-dialog-content class="content">
+  <div class="dialog-content">
+    <span class="shift-card-header">Name: </span>
+    <span class="shift-card-content">{{data.name}}</span>
+  </div>
+  <div class="dialog-content">
+    <span class="shift-card-header">Description: </span>
+    <p>{{data.description}}</p>
+  </div>
+  <div class="dialog-content">
+    <span class="shift-card-header">State: </span>
+    <span class="shift-card-content">{{data.state}}</span>
+  </div>
+  <div class="dialog-content">
+    <span class="shift-card-header">Tags: </span>
+    <span class="shift-card-content">{{data.tags}}</span>
+</div>
+
+<div mat-dialog-actions>
+  <button class="button button--filled" (click)="dialogRef.close()">Close</button>
+</div>
+</div>
