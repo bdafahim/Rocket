@@ -120,3 +120,29 @@ button.mat-menu-item:hover {
     }
   }
 
+//Search
+
+.search {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+  margin-right: 18px;
+
+  &__icon {
+    position: relative;
+    top: 12px;
+    left: 26px;
+    color:  rgba(0,0,0,0.40);;
+    font-size: 20px;
+    background: transparent;
+  }
+
+  &__input {
+    height: 40px;
+    border-radius: 8px;
+    border: solid 1px #444444;
+    padding: 8px 20px 8px 40px;
+    background-color: #F7F9FC;
+  }
+}
+

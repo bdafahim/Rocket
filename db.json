@@ -19,7 +19,7 @@
     {
       "id": 3,
       "name": "Harry Potter",
-      "description": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.",
+      "description": "Lorem ipsum is a placeholder In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.",
       "state": "On",
       "tags": ["Classification", "Data Visualization"],
       "url": "/home"
@@ -27,7 +27,7 @@
     {
       "id": 4,
       "name": "Ron Weasely",
-      "description": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.",
+      "description": "Typeface without relying on meaningful content.In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.",
       "state": "Of",
       "tags": ["Data Visualization"],
       "url": "/home"
@@ -35,7 +35,7 @@
     {
       "id": 5,
       "name": "Harmony Granger",
-      "description": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.",
+      "description": "Typeface without In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.",
       "state": "On",
       "tags": ["NLP", "Computer vision", "Classification"],
       "url": "/home"
@@ -67,7 +67,7 @@
     {
       "id": 9,
       "name": "Fred Weasely",
-      "description": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.",
+      "description": "This is a description",
       "state": "Of",
       "tags": "Data Visualization",
       "url": "/home"
