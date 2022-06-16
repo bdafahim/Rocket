@@ -49,9 +49,10 @@ import { IconModule, IconSetService } from '@coreui/icons-angular';
 import {HttpClientModule} from "@angular/common/http";
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { StoreModule } from '@ngrx/store';
-import { reducers, metaReducers } from './store/reducers';
+import {  metaReducers } from './store/reducers';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
+import {EffectsModule} from "@ngrx/effects";
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true,
@@ -94,7 +95,9 @@ const APP_CONTAINERS = [
     CardModule,
     HttpClientModule,
     ModalModule.forRoot(),
-    StoreModule.forRoot(reducers, { metaReducers }),
+    // @ts-ignore
+    StoreModule.forRoot({}, { metaReducers }),
+    EffectsModule.forRoot([]),
     !environment.production ? StoreDevtoolsModule.instrument() : []
   ],
   providers: [

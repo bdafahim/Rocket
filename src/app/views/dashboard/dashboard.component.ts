@@ -2,6 +2,12 @@ import {Component, OnInit, TemplateRef} from '@angular/core';
 import { DashboardChartsData, IChartProps } from './dashboard-charts-data';
 import {DashboardService} from "../../service/dashboard/dashboard.service";
 import {BsModalRef, BsModalService} from "ngx-bootstrap/modal";
+import {MachineLearningModel} from "../../types/machine-learning-model";
+import {select, Store} from "@ngrx/store";
+import {ModelState} from "../../store/states/model-state";
+import {LoadModels} from "../../store/actions";
+import {getModels} from "../../store/selectors/dashboard/dashboard.selector";
+import {getModelList} from "../../store/reducers";
 
 
 @Component({
@@ -11,20 +17,28 @@ import {BsModalRef, BsModalService} from "ngx-bootstrap/modal";
 export class DashboardComponent implements OnInit {
   constructor(private chartsData: DashboardChartsData,
               private modalService: BsModalService,
-              private dashboardService: DashboardService
+              private dashboardService: DashboardService,
+              private store: Store<ModelState>,
               ) {
   }
-  models: any;
+  models: MachineLearningModel[];
   modalRef?: BsModalRef;
-  modeldetails: any;
+  modelDetails: any;
 
   ngOnInit(): void {
-    this.dashboardService.getModels().subscribe(
-      data => {
-        this.models = data;
-        console.log(this.models);
-      }
-    );
+    this.store.dispatch(new LoadModels());
+    // this.dashboardService.getModels().subscribe(
+    //   data => {
+    //     this.models = data;
+    //     console.log(this.models);
+    //   }
+    // );
+    this.store.pipe(
+      select(getModelList),
+    ).subscribe((data) => {
+      this.models = data;
+      console.log('select from store', this.models);
+    });
   }
 
 
@@ -32,7 +46,7 @@ export class DashboardComponent implements OnInit {
     let data: any = {};
     this.dashboardService.geModelsById(id).subscribe(
       res => {
-        this.modeldetails = res;
+        this.modelDetails = res;
         console.log('model details ', data);
         this.modalRef = this.modalService.show(template);
       }

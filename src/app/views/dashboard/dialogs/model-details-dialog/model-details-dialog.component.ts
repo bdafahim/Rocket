@@ -1,6 +1,6 @@
 import {Component, EventEmitter, Inject, OnInit} from '@angular/core';
 import {MAT_DIALOG_DATA, MatDialogRef} from "@angular/material/dialog";
-import {MachineLearningModel} from "../../types/machine-learning-model";
+import {MachineLearningModel} from "../../../../types/machine-learning-model";
 
 @Component({
   selector: 'app-model-details-dialog',

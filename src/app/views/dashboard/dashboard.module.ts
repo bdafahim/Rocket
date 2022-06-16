@@ -21,6 +21,10 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardComponent } from './dashboard.component';
 
 import {ModelDetailsDialogModule} from "./dialogs/model-details-dialog/model-details-dialog.module";
+import {StoreModule} from "@ngrx/store";
+import {reducers} from "../../store/reducers";
+import {EffectsModule} from "@ngrx/effects";
+import {effects} from "../../store/effects";
 
 @NgModule({
   imports: [
@@ -41,6 +45,8 @@ import {ModelDetailsDialogModule} from "./dialogs/model-details-dialog/model-det
     AvatarModule,
     TableModule,
     ModelDetailsDialogModule,
+    StoreModule.forFeature('dashboard', reducers),
+    EffectsModule.forFeature(effects),
   ],
   declarations: [DashboardComponent]
 })

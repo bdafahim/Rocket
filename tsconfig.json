@@ -8,6 +8,7 @@
     "strict": false,
     "noImplicitOverride": false,
     "noPropertyAccessFromIndexSignature": false,
+    "strictPropertyInitialization": false,
     "noImplicitReturns": false,
     "noFallthroughCasesInSwitch": false,
     "sourceMap": true,
@@ -16,7 +17,7 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "es2017",
+    "target": "es2015",
     "module": "es2020",
     "lib": [
       "es2020",

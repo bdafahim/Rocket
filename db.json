@@ -5,7 +5,7 @@
       "name": "Joh Doe",
       "description": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.",
       "state": "On",
-      "tags": "Computer vision",
+      "tags": ["Computer vision", "NLP"],
       "url": "/home"
     },
     {
@@ -21,7 +21,7 @@
       "name": "Harry Potter",
       "description": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.",
       "state": "On",
-      "tags": "Classification",
+      "tags": ["Classification", "Data Visualization"],
       "url": "/home"
     },
     {
@@ -29,7 +29,7 @@
       "name": "Ron Weasely",
       "description": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.",
       "state": "Of",
-      "tags": "Data Visualization",
+      "tags": ["Data Visualization"],
       "url": "/home"
     },
     {
@@ -37,7 +37,7 @@
       "name": "Harmony Granger",
       "description": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.",
       "state": "On",
-      "tags": "NLP",
+      "tags": ["NLP", "Computer vision", "Classification"],
       "url": "/home"
     },
     {
@@ -45,7 +45,7 @@
       "name": "Neville Longbottom",
       "description": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.",
       "state": "Of",
-      "tags": "NLP",
+      "tags": "Computer vision",
       "url": "/home"
     },
     {
@@ -61,7 +61,7 @@
       "name": "Captain Sparrow",
       "description": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.",
       "state": "Of",
-      "tags": "NLP",
+      "tags": ["Classification", "Data Visualization"],
       "url": "/home"
     },
     {
@@ -69,7 +69,7 @@
       "name": "Fred Weasely",
       "description": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.",
       "state": "Of",
-      "tags": "NLP",
+      "tags": "Data Visualization",
       "url": "/home"
     }
   ],
