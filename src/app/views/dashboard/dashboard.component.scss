@@ -11,8 +11,8 @@
   box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   padding-left: 15px;
-  height: 140px;
-  width: 340px;
+  height: 150px;
+  width: 400px;
   padding-bottom: 20px;
   cursor: pointer;
   padding-right: 10px;
@@ -31,17 +31,20 @@
   font-weight: 400;
   font-size: 14px;
   color: #606268;
-  padding-top: 8px;
+  padding-top: 10px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  max-width: 240px;
+  max-width: 300px;
 }
 .modal-item-content {
   font-weight: 400;
   font-size: 14px;
   color: #606268;
   padding-top: 8px;
+  white-space: normal;
+  overflow: hidden;
+  max-width: 240px;
 }
 
 .square {
@@ -133,7 +136,9 @@ button.mat-menu-item:hover {
 }
 
 .model-footer {
-  margin-top: 50px;
+  margin-top: 20px;
+  position: sticky;
+  bottom: 0px;
 }
 .state-button {
   min-width: 100px;
@@ -142,7 +147,7 @@ button.mat-menu-item:hover {
 }
 .state-button-container{
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 .button--filled {
   color: #054ce1;
@@ -159,5 +164,26 @@ button.mat-menu-item:hover {
   border: 1px solid #054ce1;
   border-radius: 8px !important;
   margin-right: 16px;
+  margin-left: 16px;
 }
 
+.modal-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 600px;
+  width: 100%;
+  color: var(--cui-modal-content-color, unset);
+  pointer-events: auto;
+  background-color: var(--cui-modal-content-bg, #fff);
+  background-clip: padding-box;
+  overflow-y: auto;
+  height: 600px;
+}
+
+.json-class{
+  height: 150px;
+  overflow: auto;
+  border: 1px solid  #444444;
+  margin-right: 10px;
+}

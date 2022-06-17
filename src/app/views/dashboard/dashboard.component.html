@@ -37,9 +37,9 @@
 </div>
 
 <ng-template #template>
-  <div class="modal-content">
+  <div class="modal-container">
           <div class="modal-header">
-            <h4 class="modal-title pull-left">Modal</h4>
+            <h5 class="modal-title pull-left">Model Gallery Details</h5>
             <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="modalRef?.hide()">
               <span aria-hidden="true" class="visually-hidden">&times;</span>
             </button>
@@ -58,16 +58,33 @@
         <span class="modal-item-content">{{modelDetails.tags}}</span>
       </div>
       <div class="dialog-content">
-        <span class="model-card-header">Tags: </span>
+        <span class="model-card-header">State: </span>
         <span class="modal-item-content">{{modelDetails.state}}</span>
       </div>
       <div class="dialog-content">
         <span class="model-card-header">Url: </span>
         <span class="modal-item-content">{{modelDetails.url}}</span>
       </div>
-    </div>
+      <div class="d-flex">
+        <div class="col-md-6">
+          <span class="model-card-header">Request Body: </span>
+          <div class="json-class ">
+            <pre>{{modelDetails.requestBody | json}}</pre>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <span class="model-card-header">Response Body: </span>
+          <div class="json-class">
+            <pre>{{modelDetails.responseBody | json}}</pre>
+          </div>
+        </div>
+      </div>
+  </div>
     <div class="model-footer">
       <div class="state-button-container">
+        <button  class="button button--filled" (click)="modalRef?.hide()">
+          Cancel
+        </button>
         <button  class="button button--filled" (click)="changeState(modelDetails)">
           {{stateButtonText}}
         </button>

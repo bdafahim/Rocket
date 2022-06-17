@@ -3,10 +3,47 @@
     {
       "id": 1,
       "name": "Joh Doe",
-      "description": "NLP enables computers to understand natural language as humans do",
+      "description": "NLP enables computers to understand natural language as humans do. Whether the language is spoken or written",
       "state": "Off",
       "tags": ["Computer vision", "NLP"],
-      "url": "/home"
+      "url": "/home",
+      "requestBody": {
+        "object": {
+          "a": "bau bau",
+          "c": "boo boo",
+          "e": "mrau mrau"
+        },
+        "array": [1,2,3],
+        "string": "Foo bar"
+      },
+      "responseBody": {
+        "data": [{
+          "type": "articles",
+          "id": "1",
+          "attributes": {
+            "title": "JSON:API paints my bikeshed!",
+            "body": "The shortest article. Ever.",
+            "created": "2015-05-22T14:56:29.000Z",
+            "updated": "2015-05-22T14:56:28.000Z"
+          },
+          "relationships": {
+            "author": {
+              "data": {"id": "42", "type": "people"}
+            }
+          }
+        }],
+        "included": [
+          {
+            "type": "people",
+            "id": "42",
+            "attributes": {
+              "name": "John",
+              "age": 80,
+              "gender": "male"
+            }
+          }
+        ]
+      }
     },
     {
       "id": 2,
@@ -14,7 +51,44 @@
       "description": "NLP enables computers to understand natural language as humans do",
       "state": "Off",
       "tags": "NLP",
-      "url": "/home"
+      "url": "/home",
+      "requestBody": {
+        "object": {
+          "a": "bau bau",
+          "c": "boo boo",
+          "e": "mrau mrau"
+        },
+        "array": [1,2,3],
+        "string": "Foo bar"
+      },
+      "responseBody": {
+        "data": [{
+          "type": "articles",
+          "id": "1",
+          "attributes": {
+            "title": "JSON:API paints my bikeshed!",
+            "body": "The shortest article. Ever.",
+            "created": "2015-05-22T14:56:29.000Z",
+            "updated": "2015-05-22T14:56:28.000Z"
+          },
+          "relationships": {
+            "author": {
+              "data": {"id": "42", "type": "people"}
+            }
+          }
+        }],
+        "included": [
+          {
+            "type": "people",
+            "id": "42",
+            "attributes": {
+              "name": "John",
+              "age": 80,
+              "gender": "male"
+            }
+          }
+        ]
+      }
     },
     {
       "id": 3,
@@ -22,7 +96,44 @@
       "description": "Data visualization is the graphical representation of information and data.",
       "state": "On",
       "tags": ["Classification", "Data Visualization"],
-      "url": "/home"
+      "url": "/home",
+      "requestBody": {
+        "object": {
+          "a": "bau bau",
+          "c": "boo boo",
+          "e": "mrau mrau"
+        },
+        "array": [1,2,3],
+        "string": "Foo bar"
+      },
+      "responseBody": {
+        "data": [{
+          "type": "articles",
+          "id": "1",
+          "attributes": {
+            "title": "JSON:API paints my bikeshed!",
+            "body": "The shortest article. Ever.",
+            "created": "2015-05-22T14:56:29.000Z",
+            "updated": "2015-05-22T14:56:28.000Z"
+          },
+          "relationships": {
+            "author": {
+              "data": {"id": "42", "type": "people"}
+            }
+          }
+        }],
+        "included": [
+          {
+            "type": "people",
+            "id": "42",
+            "attributes": {
+              "name": "John",
+              "age": 80,
+              "gender": "male"
+            }
+          }
+        ]
+      }
     },
     {
       "id": 4,
@@ -30,7 +141,44 @@
       "description": "Data visualization is the graphical representation of information and data.",
       "state": "Off",
       "tags": ["Data Visualization"],
-      "url": "/home"
+      "url": "/home",
+      "requestBody": {
+        "object": {
+          "a": "bau bau",
+          "c": "boo boo",
+          "e": "mrau mrau"
+        },
+        "array": [1,2,3],
+        "string": "Foo bar"
+      },
+      "responseBody": {
+        "data": [{
+          "type": "articles",
+          "id": "1",
+          "attributes": {
+            "title": "JSON:API paints my bikeshed!",
+            "body": "The shortest article. Ever.",
+            "created": "2015-05-22T14:56:29.000Z",
+            "updated": "2015-05-22T14:56:28.000Z"
+          },
+          "relationships": {
+            "author": {
+              "data": {"id": "42", "type": "people"}
+            }
+          }
+        }],
+        "included": [
+          {
+            "type": "people",
+            "id": "42",
+            "attributes": {
+              "name": "John",
+              "age": 80,
+              "gender": "male"
+            }
+          }
+        ]
+      }
     },
     {
       "id": 5,
@@ -38,7 +186,44 @@
       "description": "NLP enables computers to understand natural language as humans do",
       "state": "On",
       "tags": ["NLP", "Computer vision", "Classification"],
-      "url": "/home"
+      "url": "/home",
+      "requestBody": {
+        "object": {
+          "a": "bau bau",
+          "c": "boo boo",
+          "e": "mrau mrau"
+        },
+        "array": [1,2,3],
+        "string": "Foo bar"
+      },
+      "responseBody": {
+        "data": [{
+          "type": "articles",
+          "id": "1",
+          "attributes": {
+            "title": "JSON:API paints my bikeshed!",
+            "body": "The shortest article. Ever.",
+            "created": "2015-05-22T14:56:29.000Z",
+            "updated": "2015-05-22T14:56:28.000Z"
+          },
+          "relationships": {
+            "author": {
+              "data": {"id": "42", "type": "people"}
+            }
+          }
+        }],
+        "included": [
+          {
+            "type": "people",
+            "id": "42",
+            "attributes": {
+              "name": "John",
+              "age": 80,
+              "gender": "male"
+            }
+          }
+        ]
+      }
     },
     {
       "id": 6,
@@ -46,7 +231,44 @@
       "description": "Computer vision is a field that can gain high understanding from digital images or videos.",
       "state": "Off",
       "tags": "Computer vision",
-      "url": "/home"
+      "url": "/home",
+      "requestBody": {
+        "object": {
+          "a": "bau bau",
+          "c": "boo boo",
+          "e": "mrau mrau"
+        },
+        "array": [1,2,3],
+        "string": "Foo bar"
+      },
+      "responseBody": {
+        "data": [{
+          "type": "articles",
+          "id": "1",
+          "attributes": {
+            "title": "JSON:API paints my bikeshed!",
+            "body": "The shortest article. Ever.",
+            "created": "2015-05-22T14:56:29.000Z",
+            "updated": "2015-05-22T14:56:28.000Z"
+          },
+          "relationships": {
+            "author": {
+              "data": {"id": "42", "type": "people"}
+            }
+          }
+        }],
+        "included": [
+          {
+            "type": "people",
+            "id": "42",
+            "attributes": {
+              "name": "John",
+              "age": 80,
+              "gender": "male"
+            }
+          }
+        ]
+      }
     },
     {
       "id": 7,
@@ -54,7 +276,44 @@
       "description": "NLP enables computers to understand natural language as humans do",
       "state": "Off",
       "tags": "NLP",
-      "url": "/home"
+      "url": "/home",
+      "requestBody": {
+        "object": {
+          "a": "bau bau",
+          "c": "boo boo",
+          "e": "mrau mrau"
+        },
+        "array": [1,2,3],
+        "string": "Foo bar"
+      },
+      "responseBody": {
+        "data": [{
+          "type": "articles",
+          "id": "1",
+          "attributes": {
+            "title": "JSON:API paints my bikeshed!",
+            "body": "The shortest article. Ever.",
+            "created": "2015-05-22T14:56:29.000Z",
+            "updated": "2015-05-22T14:56:28.000Z"
+          },
+          "relationships": {
+            "author": {
+              "data": {"id": "42", "type": "people"}
+            }
+          }
+        }],
+        "included": [
+          {
+            "type": "people",
+            "id": "42",
+            "attributes": {
+              "name": "John",
+              "age": 80,
+              "gender": "male"
+            }
+          }
+        ]
+      }
     },
     {
       "id": 8,
@@ -62,7 +321,44 @@
       "description": "Data visualization is the graphical representation of information and data.",
       "state": "Off",
       "tags": ["Classification", "Data Visualization"],
-      "url": "/home"
+      "url": "/home",
+      "requestBody": {
+        "object": {
+          "a": "bau bau",
+          "c": "boo boo",
+          "e": "mrau mrau"
+        },
+        "array": [1,2,3],
+        "string": "Foo bar"
+      },
+      "responseBody": {
+        "data": [{
+          "type": "articles",
+          "id": "1",
+          "attributes": {
+            "title": "JSON:API paints my bikeshed!",
+            "body": "The shortest article. Ever.",
+            "created": "2015-05-22T14:56:29.000Z",
+            "updated": "2015-05-22T14:56:28.000Z"
+          },
+          "relationships": {
+            "author": {
+              "data": {"id": "42", "type": "people"}
+            }
+          }
+        }],
+        "included": [
+          {
+            "type": "people",
+            "id": "42",
+            "attributes": {
+              "name": "John",
+              "age": 80,
+              "gender": "male"
+            }
+          }
+        ]
+      }
     },
     {
       "id": 9,
@@ -70,7 +366,44 @@
       "description": "Data visualization is the graphical representation of information and data.",
       "state": "Off",
       "tags": "Data Visualization",
-      "url": "/home"
+      "url": "/home",
+      "requestBody": {
+        "object": {
+          "a": "bau bau",
+          "c": "boo boo",
+          "e": "mrau mrau"
+        },
+        "array": [1,2,3],
+        "string": "Foo bar"
+      },
+      "responseBody": {
+        "data": [{
+          "type": "articles",
+          "id": "1",
+          "attributes": {
+            "title": "JSON:API paints my bikeshed!",
+            "body": "The shortest article. Ever.",
+            "created": "2015-05-22T14:56:29.000Z",
+            "updated": "2015-05-22T14:56:28.000Z"
+          },
+          "relationships": {
+            "author": {
+              "data": {"id": "42", "type": "people"}
+            }
+          }
+        }],
+        "included": [
+          {
+            "type": "people",
+            "id": "42",
+            "attributes": {
+              "name": "John",
+              "age": 80,
+              "gender": "male"
+            }
+          }
+        ]
+      }
     }
   ],
   "state": [
