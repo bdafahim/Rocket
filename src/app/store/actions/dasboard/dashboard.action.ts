@@ -5,6 +5,7 @@ export const LOAD_MODELS = '[Models] Load Models'
 export const LOAD_MODELS_FAIL = '[Models] Load Models Fail'
 export const LOAD_MODELS_SUCCESS = '[Models] Load Models Success'
 export const CHANGE_MODEL_STATE = '[Model] Change Model State'
+export const CHANGE_MODEL_STATE_SUCCESS = '[Model] Change Model State Success'
 
 export class LoadModels implements Action {
   readonly type = LOAD_MODELS;
@@ -30,4 +31,10 @@ export class ChangeModelState implements Action {
   }
 }
 
-export type DashboardActions = LoadModels | LoadModelsFail | LoadModelsSuccess | ChangeModelState
+export class ChangeModelStateSuccess implements Action {
+  readonly type = CHANGE_MODEL_STATE_SUCCESS;
+  constructor(public payload: {id: number, state: string}) {
+  }
+}
+
+export type DashboardActions = LoadModels | LoadModelsFail | LoadModelsSuccess | ChangeModelState | ChangeModelStateSuccess

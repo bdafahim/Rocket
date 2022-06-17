@@ -5,4 +5,5 @@ export interface ModelState {
   loaded: boolean,
   loading: boolean,
   loadingError: string,
+  modelStatus: {id: number, state: string},
 }

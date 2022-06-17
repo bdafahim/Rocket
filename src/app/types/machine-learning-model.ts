@@ -8,3 +8,10 @@ export class MachineLearningModel {
   requestBody?: string;
   responseBody?: string;
 }
+
+export enum ModelStatus {
+  ON = 'On',
+  OFF = 'Off',
+  STARTING = 'Starting',
+  STOPPING = 'Stopping'
+}

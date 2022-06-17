@@ -2,11 +2,12 @@ import {Component, OnInit, TemplateRef} from '@angular/core';
 import { DashboardChartsData, IChartProps } from './dashboard-charts-data';
 import {DashboardService} from "../../service/dashboard/dashboard.service";
 import {BsModalRef, BsModalService} from "ngx-bootstrap/modal";
-import {MachineLearningModel} from "../../types/machine-learning-model";
+import {MachineLearningModel, ModelStatus} from "../../types/machine-learning-model";
 import {select, Store} from "@ngrx/store";
 import {ModelState} from "../../store/states/model-state";
 import {ChangeModelState, LoadModels} from "../../store/actions";
-import {getModelList} from "../../store/reducers";
+import {getModelList, selectStatus} from "../../store/reducers";
+import {filter} from "rxjs";
 
 
 @Component({
@@ -28,6 +29,7 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit(): void {
     this.getModelsFromStore();
+    this.subToStatusChange();
   }
 
   getModelsFromStore() {
@@ -59,17 +61,32 @@ export class DashboardComponent implements OnInit {
 
   changeState(modelDetails: MachineLearningModel) {
     let state;
-    if(modelDetails.state === 'Off') {
-      state = 'Starting';
+    if(modelDetails.state === ModelStatus.ON) {
+      state = ModelStatus.OFF;
     } else {
-      state = 'Stopping';
+      state = ModelStatus.ON;
     }
     const payload = {
       id: modelDetails.id,
       state: state
     }
     this.store.dispatch(new ChangeModelState(payload));
-    this.stateButtonText = payload.state;
+    // this.stateButtonText = payload.state;
     console.log(this.modelDetails);
+  }
+
+  subToStatusChange() {
+    this.store.pipe(
+      select(selectStatus),
+      filter(u => !!u),
+    ).subscribe((data) => {
+      this.modelDetails = {...this.modelDetails, state: data.state};
+      this.stateButtonText = data.state;
+      const idx = this.models.findIndex(e => e.id === data.id);
+      const tmpModels = [...this.models];
+      tmpModels[idx] = {...tmpModels[idx], state: data.state};
+      this.models = tmpModels;
+      console.log('select from store', this.models);
+    });
   }
 }

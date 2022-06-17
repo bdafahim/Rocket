@@ -4,14 +4,19 @@ import {DashboardService} from "../../../service/dashboard/dashboard.service";
 import {ofType} from "@ngrx/effects";
 import {catchError, map, switchMap, of, tap} from "rxjs";
 import {
+  CHANGE_MODEL_STATE, ChangeModelState, ChangeModelStateSuccess,
   LOAD_MODELS, LoadModels,
   LoadModelsFail,
   LoadModelsSuccess
 } from "../../actions";
+import {Store} from "@ngrx/store";
+import {ModelState} from "../../states/model-state";
 
 @Injectable()
 export class DashboardEffect {
-  constructor(private actions$: Actions, private dashboardService: DashboardService) {
+  constructor(private actions$: Actions, private dashboardService: DashboardService,
+  private store: Store<ModelState>
+  ) {
   }
 
   @Effect()
@@ -27,4 +32,18 @@ export class DashboardEffect {
         );
     }),
   )
+
+  @Effect()
+  changeModelState$ = this.actions$.pipe(
+    ofType(CHANGE_MODEL_STATE),
+    map((action: ChangeModelState) => action.payload),
+    switchMap((data) => {
+      return this.dashboardService.changeModelState(data.id, data.state);
+    }),
+    tap(e => console.log('CHANGE MODEL EFFECT CALLED')),
+    map(
+      (res) => new ChangeModelStateSuccess({id: res.id, state: res.state})
+    )
+  )
+
 }
