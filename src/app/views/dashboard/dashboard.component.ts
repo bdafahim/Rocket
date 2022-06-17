@@ -61,11 +61,7 @@ export class DashboardComponent implements OnInit {
 
   changeState(modelDetails: MachineLearningModel) {
     let state;
-    if(modelDetails.state === ModelStatus.ON) {
-      state = ModelStatus.OFF;
-    } else {
-      state = ModelStatus.ON;
-    }
+    state = this.setModelState(modelDetails);
     const payload = {
       id: modelDetails.id,
       state: state
@@ -73,6 +69,14 @@ export class DashboardComponent implements OnInit {
     this.store.dispatch(new ChangeModelState(payload));
     // this.stateButtonText = payload.state;
     console.log(this.modelDetails);
+  }
+
+   setModelState(modelDetails: MachineLearningModel) {
+    if (modelDetails.state === ModelStatus.ON) {
+      return ModelStatus.OFF;
+    } else {
+      return ModelStatus.ON;
+    }
   }
 
   subToStatusChange() {

@@ -19,15 +19,11 @@ export class DashboardService {
         })
       ) as Observable<MachineLearningModel[]>
   }
-  geModelsById(id: number) {
-    const url = `${this.baseUrl}/models/${id}`
-    return this.http.get(url);
-  }
   changeModelState(id: number, state: string): Observable<{id: number, state: string}> {
     return new Observable((res) => {
       setTimeout(() => {
         res.next({ id, state });
-      }, 5000);
+      }, 8000);
     });
   }
 }

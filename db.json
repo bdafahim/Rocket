@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Joh Doe",
       "description": "NLP enables computers to understand natural language as humans do",
-      "state": "On",
+      "state": "Off",
       "tags": ["Computer vision", "NLP"],
       "url": "/home"
     },
