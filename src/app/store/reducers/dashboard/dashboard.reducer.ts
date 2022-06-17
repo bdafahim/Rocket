@@ -40,5 +40,22 @@ export function dashboardReducer (state = initialState, action: fromDashboardAct
 
       }
     }
+    case fromDashboardAction.CHANGE_MODEL_STATE: {
+      let updatedModel = state.models.find(o => o.id === action.payload.id)
+      let updatedList = state.models;
+      const modelToBeUpdated = updatedList.map((obj) => {
+        if(obj.id === updatedModel.id) {
+          console.log('state ', action.payload.state, ' model ', updatedModel);
+          return {...obj, state: action.payload.state};
+        }
+        return obj;
+      })
+      // updatedList = [...state.models];
+      console.log('Full List ', updatedList);
+      return {
+        ...state,
+        models: modelToBeUpdated
+      }
+    }
   }
 }

@@ -9,25 +9,25 @@
   </div>
 
   <div class="row">
-    <div *ngFor="let model of models" class="col3 col4 col2 shift-list">
-      <div class="shift_card" (click)="cardDetails(template, model.id)">
+    <div *ngFor="let model of models" class="col3 col4 col2 model-list">
+      <div class="model_card" (click)="cardDetails(template, model)">
         <div class="d-flex justify-content-between">
-          <div class="shift-card-first-part col">
+          <div class="model-card-first-part col">
             <div>
-              <span class="shift-card-header">Name: </span>
-              <span class="shift-card-content">{{model.name}}</span>
+              <span class="model-card-header">Name: </span>
+              <span class="model-card-content">{{model.name}}</span>
             </div>
-            <div class="shift-card-content">
-              <span class="shift-card-header">Description: </span>
-              <span class="shift-card-content">{{model.description}}</span>
+            <div class="model-card-content">
+              <span class="model-card-header">Description: </span>
+              <span class="model-card-content">{{model.description}}</span>
             </div>
-            <div class="shift-card-content">
-              <span class="shift-card-header">Tags: </span>
-              <span class="shift-card-content">{{model.tags}}</span>
+            <div class="model-card-content">
+              <span class="model-card-header">Tags: </span>
+              <span class="model-card-content">{{model.tags}}</span>
             </div>
-            <div class="shift-card-content">
-              <span class="shift-card-header">State: </span>
-              <span class="shift-card-content">{{model.state}}</span>
+            <div class="model-card-content">
+              <span class="model-card-header">State: </span>
+              <span class="model-card-content">{{model.state}}</span>
             </div>
           </div>
         </div>
@@ -38,35 +38,43 @@
 
 <ng-template #template>
   <div class="modal-content">
-    <div class="modal-header">
-      <h4 class="modal-title pull-left">Modal</h4>
-      <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="modalRef?.hide()">
-        <span aria-hidden="true" class="visually-hidden">&times;</span>
-      </button>
-    </div>
-    <div class="modal-body">
-      This is a modal.
-    </div>
-    <div class="modal-body">
-      <div class="dialog-content">
-        <span class="shift-card-header">Name: </span>
-        <span class="shift-card-content">{{modelDetails.name}}</span>
+          <div class="modal-header">
+            <h4 class="modal-title pull-left">Modal</h4>
+            <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="modalRef?.hide()">
+              <span aria-hidden="true" class="visually-hidden">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="dialog-content">
+              <span class="model-card-header">Name: </span>
+              <span class="modal-item-content">{{modelDetails.name}}</span>
       </div>
       <div class="dialog-content">
-        <span class="shift-card-header">Description: </span>
-        <span class="shift-card-content">{{modelDetails.description}}</span>
+        <span class="model-card-header">Description: </span>
+        <span class="modal-item-content">{{modelDetails.description}}</span>
       </div>
       <div class="dialog-content">
-        <span class="shift-card-header">Tags: </span>
-        <span class="shift-card-content">{{modelDetails.tags}}</span>
+        <span class="model-card-header">Tags: </span>
+        <span class="modal-item-content">{{modelDetails.tags}}</span>
       </div>
       <div class="dialog-content">
-        <span class="shift-card-header">Url: </span>
-        <span class="shift-card-content">{{modelDetails.url}}</span>
+        <span class="model-card-header">Tags: </span>
+        <span class="modal-item-content">{{modelDetails.state}}</span>
+      </div>
+      <div class="dialog-content">
+        <span class="model-card-header">Url: </span>
+        <span class="modal-item-content">{{modelDetails.url}}</span>
       </div>
     </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-default" (click)="modalRef?.hide()">Close</button>
+    <div class="model-footer">
+      <div class="state-button-container">
+        <button  class="button button--filled" (click)="changeState(modelDetails)">
+          {{stateButtonText}}
+        </button>
+      </div>
     </div>
+<!--    <div class="modal-footer">-->
+<!--      <button type="button" class="btn btn-default" (click)="modalRef?.hide()">Close</button>-->
+<!--    </div>-->
   </div>
 </ng-template>

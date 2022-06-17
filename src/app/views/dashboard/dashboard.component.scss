@@ -6,7 +6,7 @@
   }
 }
 
-.shift_card {
+.model_card {
   background: #FFFFFF;
   box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -18,7 +18,7 @@
   padding-right: 10px;
 }
 
-.shift-card-header {
+.model-card-header {
   font-weight: 600;
   font-size: 14px;
   text-overflow: ellipsis;
@@ -27,7 +27,7 @@
   max-width: 240px;
 }
 
-.shift-card-content {
+.model-card-content {
   font-weight: 400;
   font-size: 14px;
   color: #606268;
@@ -36,6 +36,12 @@
   white-space: nowrap;
   overflow: hidden;
   max-width: 240px;
+}
+.modal-item-content {
+  font-weight: 400;
+  font-size: 14px;
+  color: #606268;
+  padding-top: 8px;
 }
 
 .square {
@@ -49,7 +55,7 @@
   background: #F7F9FC;
   border: #F7F9FC;
 }
-.shift-card-first-part {
+.model-card-first-part {
   padding-top: 15px;
 }
 
@@ -63,28 +69,8 @@ button.mat-menu-item:hover {
   color: #fff !important;
 }
 
-.shift-list {
+.model-list {
   margin-bottom: 20px;
-}
-
-.shift-card-header {
-  font-weight: 600;
-  font-size: 14px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  max-width: 240px;
-}
-
-.shift-card-content {
-  font-weight: 400;
-  font-size: 14px;
-  color: #606268;
-  padding-top: 8px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  max-width: 240px;
 }
 
 
@@ -144,5 +130,34 @@ button.mat-menu-item:hover {
     padding: 8px 20px 8px 40px;
     background-color: #F7F9FC;
   }
+}
+
+.model-footer {
+  margin-top: 50px;
+}
+.state-button {
+  min-width: 100px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.state-button-container{
+  display: flex;
+  justify-content: flex-end;
+}
+.button--filled {
+  color: #054ce1;
+  padding-top: 5px;
+  margin-bottom: 10px;
+  height: 36px;
+  width: 100px;
+  min-height: 0;
+  display: flex;
+  justify-content: center;
+  background: none;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid #054ce1;
+  border-radius: 8px !important;
+  margin-right: 16px;
 }
 

@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Joh Doe",
-      "description": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.",
+      "description": "NLP enables computers to understand natural language as humans do",
       "state": "On",
       "tags": ["Computer vision", "NLP"],
       "url": "/home"
@@ -11,15 +11,15 @@
     {
       "id": 2,
       "name": "Yiorgos Avraamu",
-      "description": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.",
-      "state": "Of",
+      "description": "NLP enables computers to understand natural language as humans do",
+      "state": "Off",
       "tags": "NLP",
       "url": "/home"
     },
     {
       "id": 3,
       "name": "Harry Potter",
-      "description": "Lorem ipsum is a placeholder In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.",
+      "description": "Data visualization is the graphical representation of information and data.",
       "state": "On",
       "tags": ["Classification", "Data Visualization"],
       "url": "/home"
@@ -27,15 +27,15 @@
     {
       "id": 4,
       "name": "Ron Weasely",
-      "description": "Typeface without relying on meaningful content.In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.",
-      "state": "Of",
+      "description": "Data visualization is the graphical representation of information and data.",
+      "state": "Off",
       "tags": ["Data Visualization"],
       "url": "/home"
     },
     {
       "id": 5,
       "name": "Harmony Granger",
-      "description": "Typeface without In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.",
+      "description": "NLP enables computers to understand natural language as humans do",
       "state": "On",
       "tags": ["NLP", "Computer vision", "Classification"],
       "url": "/home"
@@ -43,32 +43,32 @@
     {
       "id": 6,
       "name": "Neville Longbottom",
-      "description": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.",
-      "state": "Of",
+      "description": "Computer vision is a field that can gain high understanding from digital images or videos.",
+      "state": "Off",
       "tags": "Computer vision",
       "url": "/home"
     },
     {
       "id": 7,
       "name": "Gennie Weasely",
-      "description": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.",
-      "state": "Of",
+      "description": "NLP enables computers to understand natural language as humans do",
+      "state": "Off",
       "tags": "NLP",
       "url": "/home"
     },
     {
       "id": 8,
       "name": "Captain Sparrow",
-      "description": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.",
-      "state": "Of",
+      "description": "Data visualization is the graphical representation of information and data.",
+      "state": "Off",
       "tags": ["Classification", "Data Visualization"],
       "url": "/home"
     },
     {
       "id": 9,
       "name": "Fred Weasely",
-      "description": "This is a description",
-      "state": "Of",
+      "description": "Data visualization is the graphical representation of information and data.",
+      "state": "Off",
       "tags": "Data Visualization",
       "url": "/home"
     }
