@@ -25,6 +25,7 @@ import {StoreModule} from "@ngrx/store";
 import {reducers} from "../../store/reducers";
 import {EffectsModule} from "@ngrx/effects";
 import {effects} from "../../store/effects";
+import { ModelGalleryCardComponent } from './model-gallery-card/model-gallery-card.component';
 
 @NgModule({
   imports: [
@@ -49,7 +50,7 @@ import {effects} from "../../store/effects";
     EffectsModule.forFeature(effects),
     FormsModule,
   ],
-  declarations: [DashboardComponent]
+  declarations: [DashboardComponent, ModelGalleryCardComponent]
 })
 export class DashboardModule {
 }

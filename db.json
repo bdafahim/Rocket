@@ -3,9 +3,9 @@
     {
       "id": 1,
       "name": "Joh Doe",
-      "description": "NLP enables computers to understand natural language as humans do. Whether the language is spoken or written",
+      "description": "NLP enables computers to understand natural language as humans do. Whether the language is spoken or written. Whether the language is spoken or written",
       "state": "Off",
-      "tags": ["Computer vision", "NLP"],
+      "tags": ["Computer Vision", "NLP"],
       "url": "/home",
       "requestBody": {
         "object": {
@@ -48,9 +48,9 @@
     {
       "id": 2,
       "name": "Yiorgos Avraamu",
-      "description": "NLP enables computers to understand natural language as humans do",
+      "description": "NLP enables computers to understand natural language as humans do. Whether the language is spoken or written. Whether the language is spoken or written",
       "state": "Off",
-      "tags": "NLP",
+      "tags": ["NLP"],
       "url": "/home",
       "requestBody": {
         "object": {
@@ -93,7 +93,7 @@
     {
       "id": 3,
       "name": "Harry Potter",
-      "description": "Data visualization is the graphical representation of information and data.",
+      "description": "Data visualization is the graphical representation of information and data. Data visualization helps to tell stories by curating data into a form easier to understand, highlighting the trends and outliers.",
       "state": "On",
       "tags": ["Classification", "Data Visualization"],
       "url": "/home",
@@ -138,7 +138,7 @@
     {
       "id": 4,
       "name": "Ron Weasely",
-      "description": "Data visualization is the graphical representation of information and data.",
+      "description": "Data visualization is the graphical representation of information and data. Data visualization helps to tell stories by curating data into a form easier to understand, highlighting the trends and outliers.",
       "state": "Off",
       "tags": ["Data Visualization"],
       "url": "/home",
@@ -185,7 +185,7 @@
       "name": "Harmony Granger",
       "description": "NLP enables computers to understand natural language as humans do",
       "state": "On",
-      "tags": ["NLP", "Computer vision", "Classification"],
+      "tags": ["NLP", "Computer Vision", "Classification"],
       "url": "/home",
       "requestBody": {
         "object": {
@@ -230,7 +230,7 @@
       "name": "Neville Longbottom",
       "description": "Computer vision is a field that can gain high understanding from digital images or videos.",
       "state": "Off",
-      "tags": "Computer vision",
+      "tags": ["Computer Vision"],
       "url": "/home",
       "requestBody": {
         "object": {
@@ -275,7 +275,7 @@
       "name": "Gennie Weasely",
       "description": "NLP enables computers to understand natural language as humans do",
       "state": "Off",
-      "tags": "NLP",
+      "tags": ["Education"],
       "url": "/home",
       "requestBody": {
         "object": {
@@ -318,7 +318,7 @@
     {
       "id": 8,
       "name": "Captain Sparrow",
-      "description": "Data visualization is the graphical representation of information and data.",
+      "description": "Data visualization is the graphical representation of information and data. Data visualization helps to tell stories by curating data into a form easier to understand, highlighting the trends and outliers.",
       "state": "Off",
       "tags": ["Classification", "Data Visualization"],
       "url": "/home",
@@ -363,9 +363,9 @@
     {
       "id": 9,
       "name": "Fred Weasely",
-      "description": "Data visualization is the graphical representation of information and data.",
+      "description": "Data visualization is the graphical representation of information and data. Data visualization helps to tell stories by curating data into a form easier to understand, highlighting the trends and outliers.",
       "state": "Off",
-      "tags": "Data Visualization",
+      "tags": ["Data Visualization"],
       "url": "/home",
       "requestBody": {
         "object": {
@@ -405,14 +405,5 @@
         ]
       }
     }
-  ],
-  "state": [
-    {
-      "state": ["On", "Starting", "Stopping", "Off"]
-    }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
-  ],
-  "profile": { "name": "typicode" }
+  ]
 }

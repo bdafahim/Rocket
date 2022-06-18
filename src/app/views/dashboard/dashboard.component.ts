@@ -20,6 +20,10 @@ export class DashboardComponent implements OnInit {
   modalRef?: BsModalRef;
   modelDetails: MachineLearningModel;
   stateButtonText: string;
+  tagList = [
+    {tag: "Computer Vision"}, {tag: "NLP"}, {tag: "Classification"}, {tag: "Data Visualization"}, {tag: "Education"}
+  ]
+  selectedTags: string;
   constructor(private chartsData: DashboardChartsData,
               private modalService: BsModalService,
               private dashboardService: DashboardService,
@@ -92,5 +96,18 @@ export class DashboardComponent implements OnInit {
       this.models = tmpModels;
       console.log('select from store', this.models);
     });
+  }
+
+  searchByTags() {
+    setTimeout(() => {
+      this.models = this.machineLearningModels.filter((o) =>{
+        return o.tags.indexOf(this.selectedTags.trim()) !== -1;
+      })
+      console.log(this.selectedTags);
+    }, 0);
+  }
+
+  clearSelectedTags() {
+    this.models = this.machineLearningModels;
   }
 }

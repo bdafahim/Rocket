@@ -110,11 +110,13 @@ button.mat-menu-item:hover {
   }
 
 //Search
-
+.serach-and-tags {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
 .search {
   display: flex;
-  justify-content: flex-end;
-  margin-bottom: 15px;
   margin-right: 18px;
 
   &__icon {
@@ -186,4 +188,12 @@ button.mat-menu-item:hover {
   overflow: auto;
   border: 1px solid  #444444;
   margin-right: 10px;
+}
+.radio-button {
+  margin-right: 10px;
+}
+
+.clear-button {
+  background: rgba(255, 0, 0, 0.73);
+  color: #F7F9FC;
 }
