@@ -6,7 +6,7 @@
       "description": "NLP enables computers to understand natural language as humans do. Whether the language is spoken or written. Whether the language is spoken or written",
       "state": "Off",
       "tags": ["Computer Vision", "NLP"],
-      "url": "/home",
+      "url": "https://www.tableau.com",
       "requestBody": {
         "object": {
           "a": "bau bau",
@@ -49,7 +49,7 @@
       "id": 2,
       "name": "Yiorgos Avraamu",
       "description": "NLP enables computers to understand natural language as humans do. Whether the language is spoken or written. Whether the language is spoken or written",
-      "state": "Off",
+      "state": "On",
       "tags": ["NLP"],
       "url": "/home",
       "requestBody": {
@@ -94,7 +94,7 @@
       "id": 3,
       "name": "Harry Potter",
       "description": "Data visualization is the graphical representation of information and data. Data visualization helps to tell stories by curating data into a form easier to understand, highlighting the trends and outliers.",
-      "state": "On",
+      "state": "Off",
       "tags": ["Classification", "Data Visualization"],
       "url": "/home",
       "requestBody": {
@@ -139,7 +139,7 @@
       "id": 4,
       "name": "Ron Weasely",
       "description": "Data visualization is the graphical representation of information and data. Data visualization helps to tell stories by curating data into a form easier to understand, highlighting the trends and outliers.",
-      "state": "Off",
+      "state": "On",
       "tags": ["Data Visualization"],
       "url": "/home",
       "requestBody": {
@@ -184,7 +184,7 @@
       "id": 5,
       "name": "Harmony Granger",
       "description": "NLP enables computers to understand natural language as humans do",
-      "state": "On",
+      "state": "Off",
       "tags": ["NLP", "Computer Vision", "Classification"],
       "url": "/home",
       "requestBody": {
@@ -319,7 +319,7 @@
       "id": 8,
       "name": "Captain Sparrow",
       "description": "Data visualization is the graphical representation of information and data. Data visualization helps to tell stories by curating data into a form easier to understand, highlighting the trends and outliers.",
-      "state": "Off",
+      "state": "On",
       "tags": ["Classification", "Data Visualization"],
       "url": "/home",
       "requestBody": {

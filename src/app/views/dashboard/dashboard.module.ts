@@ -20,12 +20,11 @@ import { ChartjsModule } from '@coreui/angular-chartjs';
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardComponent } from './dashboard.component';
 
-import {ModelDetailsDialogModule} from "./dialogs/model-details-dialog/model-details-dialog.module";
 import {StoreModule} from "@ngrx/store";
 import {reducers} from "../../store/reducers";
 import {EffectsModule} from "@ngrx/effects";
 import {effects} from "../../store/effects";
-import { ModelGalleryCardComponent } from './model-gallery-card/model-gallery-card.component';
+import {TooltipModule} from "ngx-bootstrap/tooltip";
 
 @NgModule({
   imports: [
@@ -45,12 +44,12 @@ import { ModelGalleryCardComponent } from './model-gallery-card/model-gallery-ca
     ChartjsModule,
     AvatarModule,
     TableModule,
-    ModelDetailsDialogModule,
     StoreModule.forFeature('dashboard', reducers),
     EffectsModule.forFeature(effects),
     FormsModule,
+    TooltipModule,
   ],
-  declarations: [DashboardComponent, ModelGalleryCardComponent]
+  declarations: [DashboardComponent]
 })
 export class DashboardModule {
 }

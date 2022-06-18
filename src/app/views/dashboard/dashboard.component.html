@@ -39,7 +39,8 @@
             </div>
             <div class="model-card-content">
               <span class="model-card-header">State: </span>
-              <span class="model-card-content">{{model.state}}</span>
+              <span class="model-card-content-state" [ngStyle]="{'color': model.state === 'Off' ?
+               '#c20d0d': (model.state === 'On' ? '#077931' : '#ad9c07')}">{{model.state}}</span>
             </div>
           </div>
         </div>
@@ -71,11 +72,14 @@
       </div>
       <div class="dialog-content">
         <span class="model-card-header">State: </span>
-        <span class="modal-item-content">{{modelDetails.state}}</span>
+        <span class="modal-item-content-state" [ngStyle]="{'color': modelDetails.state === 'Off' ?
+               '#c20d0d': (modelDetails.state === 'On' ? '#077931' : '#ad9c07')}">{{modelDetails.state}}</span>
       </div>
       <div class="dialog-content">
         <span class="model-card-header">Url: </span>
         <span class="modal-item-content">{{modelDetails.url}}</span>
+          <button class="btn btn-outline-secondary copy-button-style" (click)="copyMessage(modelDetails.url)"
+                  tooltip="click to copy">Copy</button>
       </div>
       <div class="d-flex">
         <div class="col-md-6">
@@ -102,8 +106,5 @@
         </button>
       </div>
     </div>
-<!--    <div class="modal-footer">-->
-<!--      <button type="button" class="btn btn-default" (click)="modalRef?.hide()">Close</button>-->
-<!--    </div>-->
   </div>
 </ng-template>
