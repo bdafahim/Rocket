@@ -110,12 +110,7 @@ export class DashboardComponent implements OnInit {
 
   searchByTags() {
     setTimeout(() => {
-      // this.models = this.machineLearningModels.filter((o) =>{
-      //   return o.tags.indexOf(this.selectedTags.trim()) !== -1;
-      // })
-      // console.log(this.selectedTags);
       this.models = this.mappedModel[this.selectedTags];
-      console.log('hjdssdlkskjd   ', this.models);
     }, 0);
   }
 
@@ -137,3 +132,13 @@ export class DashboardComponent implements OnInit {
     document.body.removeChild(selBox);
   }
 }
+
+
+
+
+
+
+// this.models = this.machineLearningModels.filter((o) =>{
+//   return o.tags.indexOf(this.selectedTags.trim()) !== -1;
+// })
+// console.log(this.selectedTags);
