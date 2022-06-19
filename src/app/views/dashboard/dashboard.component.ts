@@ -1,5 +1,5 @@
 import {Component, OnInit, TemplateRef} from '@angular/core';
-import { DashboardChartsData, IChartProps } from './dashboard-charts-data';
+import { DashboardChartsData } from './dashboard-charts-data';
 import {DashboardService} from "../../service/dashboard/dashboard.service";
 import {BsModalRef, BsModalService} from "ngx-bootstrap/modal";
 import {MachineLearningModel, ModelStatus} from "../../types/machine-learning-model";
@@ -22,7 +22,8 @@ export class DashboardComponent implements OnInit {
   stateButtonText: string;
   tagList = [
     {tag: "Computer Vision"}, {tag: "NLP"}, {tag: "Classification"}, {tag: "Data Visualization"}, {tag: "Education"}
-  ]
+  ];
+  mappedModel = {};
   selectedTags: string;
   constructor(private chartsData: DashboardChartsData,
               private modalService: BsModalService,
@@ -43,6 +44,15 @@ export class DashboardComponent implements OnInit {
     ).subscribe((data) => {
       this.models = data;
       this.machineLearningModels = data;
+      data.forEach((e) => {
+        e.tags.forEach((tag) => {
+          if(!this.mappedModel[tag]) {
+            this.mappedModel[tag] = [];
+          }
+          this.mappedModel[tag].push(e);
+        })
+      })
+      console.log('mappedModels ', this.mappedModel);
       console.log('select from store', this.models);
     });
   }
@@ -100,10 +110,12 @@ export class DashboardComponent implements OnInit {
 
   searchByTags() {
     setTimeout(() => {
-      this.models = this.machineLearningModels.filter((o) =>{
-        return o.tags.indexOf(this.selectedTags.trim()) !== -1;
-      })
-      console.log(this.selectedTags);
+      // this.models = this.machineLearningModels.filter((o) =>{
+      //   return o.tags.indexOf(this.selectedTags.trim()) !== -1;
+      // })
+      // console.log(this.selectedTags);
+      this.models = this.mappedModel[this.selectedTags];
+      console.log('hjdssdlkskjd   ', this.models);
     }, 0);
   }
 
